@@ -122,4 +122,4 @@ group: !include groups.yaml
 ## Automation                             #
 ###########################################
 
-automation: !include automation.yaml
+automation: !include_dir_merge_list automation
