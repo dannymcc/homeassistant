@@ -1,0 +1,11 @@
+### CUSTOMIZE ###
+
+## Default View ##
+# Television #
+input_select.channel:
+  icon: mdi:television-guide
+script.playpause:
+  icon: mdi:play-pause
+  friendly_name: Play/Pause
+script.record:
+  icon: mdi:record-rec

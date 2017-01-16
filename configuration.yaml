@@ -1,0 +1,125 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude
+  longitude: !secret longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 68
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/London
+  # Customisations File
+  customize: !include customise.yaml
+# Enables the frontend
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  platform: yr
+
+# Text to speech
+tts:
+  platform: google
+
+device_tracker:
+  platform: unifi
+  host: !secret unifi_host
+  username: !secret unifi_user
+  password: !secret unifi_pass
+  site_id: !secret unifi_site
+  interval_seconds: 10
+  consider_home: 180
+  track_new_devices: yes
+
+platform: systemmonitor
+resources:
+  - type: disk_use_percent
+    arg: /
+  - type: disk_use_percent
+    arg: /var/log
+  - type: memory_use_percent
+  - type: memory_use
+  - type: memory_free
+  - type: processor_use
+  - type: swap_use_percent
+  - type: swap_use
+  - type: swap_free
+  - type: last_boot
+  - type: since_last_boot
+  - type: network_in
+    arg: eth0
+  - type: network_out
+    arg: eth0
+  - type: packets_in
+    arg: eth0
+  - type: packets_out
+    arg: eth0
+  - type: ipv4_address
+    arg: eth0
+  - type: ipv6_address
+    arg: eth0
+  - type: network_in
+    arg: eth1
+  - type: network_out
+    arg: eth1
+  - type: packets_in
+    arg: eth1
+  - type: packets_out
+    arg: eth1
+  - type: ipv4_address
+    arg: eth1
+  - type: ipv6_address
+    arg: eth1
+
+##########################################
+##Shell Commands                         #
+##########################################
+shell_command: !include shell_commands.yaml
+
+##########################################
+##Inputs                                 #
+##########################################
+input_select: !include input_select.yaml
+input_slider: !include input_slider.yaml
+
+##########################################
+##Scripts                                #
+##########################################
+script: !include scripts.yaml
+
+###########################################  
+##Groups                                  #
+###########################################
+group: !include groups.yaml
+
+###########################################
+## Automation                             #
+###########################################
+
+automation: !include automation.yaml

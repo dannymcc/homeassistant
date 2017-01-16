@@ -1,0 +1,9 @@
+### SCRIPTS ###
+
+# Sky #
+record:
+  sequence:
+  - service: shell_command.record
+playpause:
+  sequence:
+  - service: shell_command.playpause

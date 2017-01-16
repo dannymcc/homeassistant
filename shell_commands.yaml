@@ -1,0 +1,10 @@
+### SHELL COMMANDS ###
+
+# Sky #
+record: /opt/nodejs/bin/sky-remote-cli 10.4.1.55 record
+playpause: /opt/nodejs/bin/sky-remote-cli 10.4.1.55 pause
+bbcone: /opt/nodejs/bin/sky-remote-cli 10.4.1.55 1 0 1
+bbctwo: /opt/nodejs/bin/sky-remote-cli 10.4.1.55 1 0 2
+itv: /opt/nodejs/bin/sky-remote-cli 10.4.1.55 1 0 3
+channel4: /opt/nodejs/bin/sky-remote-cli 10.4.1.55 1 0 4
+sky1: /opt/nodejs/bin/sky-remote-cli 10.4.1.55 1 0 6

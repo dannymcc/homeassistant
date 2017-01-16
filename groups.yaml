@@ -1,0 +1,73 @@
+############################################################
+#
+#    Groups
+#
+############################################################
+
+ default_view:
+  name: DEFAULT
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.television
+    - group.presence
+    - light.downstairs_hallway
+    - light.upstairs_hallway
+
+ living_room:
+  view: yes
+  name: Living Room
+  icon: mdi:sofa
+  entities: 
+   - switch.lamp
+
+ master_room:
+  view: yes
+  name: Master Bedroom
+  icon: mdi:hotel
+  entities: 
+   - light.master_bedroom
+
+ chloes_bedroom:
+  view: yes
+  name: Chloe's Bedroom
+  entities:
+   - light.chloes_room
+
+ status_view:
+  name: Status
+  view: yes
+  icon: mdi:chip
+  entities:
+    - group.sensor_pi
+
+ presence:
+  name: Presence
+  entities:
+    - device_tracker.dans_oneplus_three
+    - device_tracker.kates_iphone
+
+ sensor_pi:
+  name: Raspberry Pi
+  entities:
+    - sensor.cpu_use
+    - sensor.disk_use_
+    - sensor.disk_use_varlog
+    - sensor.ram_use
+    - sensor.ram_free
+    - sensor.swap_use
+    - sensor.swap_free
+    - sensor.last_boot
+    - sensor.since_last_boot
+    - sensor.received_eth1
+    - sensor.sent_eth1
+
+ television:
+  - input_select.channel
+  - script.playpause
+  - script.record
+
+ security:
+  - light.downstairs_hallway
+  - light.hallways
+  - switch.lamp
