@@ -17,3 +17,6 @@ light.chloes_room:
 
 light.master_bedroom:
   friendly_name: 'Main Light'
+
+group.presence:
+  friendly_name: 'Family'
