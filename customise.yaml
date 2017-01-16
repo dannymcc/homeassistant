@@ -12,7 +12,7 @@ script.record:
 
 
 
-light.chloes_bedroom:
+light.chloes_room:
   friendly_name: 'Main Light'
 
 light.master_bedroom:
