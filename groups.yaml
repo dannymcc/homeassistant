@@ -13,6 +13,7 @@
     - group.presence
     - light.downstairs_hallway
     - light.upstairs_hallway
+    - climate.downstairs
 
  living_room:
   view: yes
