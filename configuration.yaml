@@ -20,6 +20,12 @@ http:
   api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
+  
+netatmo:
+  api_key: !secret netatmo_apikey
+  secret_key: !secret netatmo_secretkey
+  username: !secret netatmo_user
+  password: !secret netatmo_pass
 
 # Checks for available updates
 updater:
