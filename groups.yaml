@@ -32,15 +32,18 @@
   name: Bedrooms
   icon: mdi:hotel
   entities: 
-   - light.master_bedroom
-   - light.chloes_room
+   - group.master_bedroom
+   - group.chloes_bedroom
 
- status_view:
-  name: Status
-  view: yes
-  icon: mdi:chip
-  entities:
-    - group.sensor_pi
+ chloes_bedroom:
+  name: Chloe's Bedroom
+  entities: 
+   - light.chloes_room
+   
+  master_bedroom:
+  name: Master Bedroom
+  entities: 
+   - light.master_bedroom
 
  presence:
   name: Presence
