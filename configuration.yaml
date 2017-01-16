@@ -27,6 +27,13 @@ netatmo:
   username: !secret netatmo_user
   password: !secret netatmo_pass
 
+sensor:
+  platform: netatmo
+  modules:
+    Downstairs:
+      - temperature
+      - battery_vp
+
 # Checks for available updates
 updater:
 
