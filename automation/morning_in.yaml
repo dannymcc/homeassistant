@@ -1,0 +1,47 @@
+###  6:15AM Weekday Morning Routine  ###
+###  [IF HOME] ###
+###  [Lights] [Turn On] Security Lighting  ###
+- alias: "Weekday Sunrise Hall & Living Room"
+  trigger:
+    platform: time
+    after: '06:50'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: group.all_devices
+        state: 'home'
+      - condition: time
+        weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.security
+
+###  6:50AM Weekday Morning Routine  ###
+###  [IF HOME] ###
+###  [Lights] [Turn On] Master Bedroom  ###
+- alias: "Weekday Sunrise Master Bedroom"
+  trigger:
+    platform: time
+    after: '06:50'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: group.all_devices
+        state: 'home'
+      - condition: time
+        weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.master_bedroom
