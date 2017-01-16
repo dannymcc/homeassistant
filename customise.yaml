@@ -9,3 +9,11 @@ script.playpause:
   friendly_name: Play/Pause
 script.record:
   icon: mdi:record-rec
+
+
+
+light.chloes_bedroom:
+  friendly_name: 'Main Light'
+
+light.master_bedroom:
+  friendly_name: 'Main Light'
