@@ -1,47 +1,36 @@
-###  6:15AM Weekday Morning Routine  ###
-###  [IF HOME] ###
-###  [Lights] [Turn On] Security Lighting  ###
-- alias: "Weekday Sunrise Hall & Living Room"
+# Sky #
+- alias: 'BBC One'
   trigger:
-    platform: time
-    after: '06:50'
-  condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: group.all_devices
-        state: 'home'
-      - condition: time
-        weekday:
-          - mon
-          - tue
-          - wed
-          - thu
-          - fri
+    - platform: state
+      entity_id: input_select.channel
+      state: 'BBC One'
   action:
-    service: homeassistant.turn_on
-    entity_id: group.security
-
-###  6:50AM Weekday Morning Routine  ###
-###  [IF HOME] ###
-###  [Lights] [Turn On] Master Bedroom  ###
-- alias: "Weekday Sunrise Master Bedroom"
+    service: shell_command.bbcone
+- alias: 'BBC Two'
   trigger:
-    platform: time
-    after: '06:50'
-  condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: group.all_devices
-        state: 'home'
-      - condition: time
-        weekday:
-          - mon
-          - tue
-          - wed
-          - thu
-          - fri
+    - platform: state
+      entity_id: input_select.channel
+      state: 'BBC Two'
   action:
-    service: homeassistant.turn_on
-    entity_id: light.master_bedroom
+    service: shell_command.bbctwo
+- alias: 'ITV'
+  trigger:
+    - platform: state
+      entity_id: input_select.channel
+      state: 'ITV'
+  action:
+    service: shell_command.itv
+- alias: 'Channel 4'
+  trigger:
+    - platform: state
+      entity_id: input_select.channel
+      state: 'Channel 4'
+  action:
+    service: shell_command.channel4
+- alias: 'Sky 1'
+  trigger:
+    - platform: state
+      entity_id: input_select.channel
+      state: 'Sky 1'
+  action:
+    service: shell_command.sky1
