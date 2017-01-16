@@ -14,6 +14,7 @@
     - light.downstairs_hallway
     - light.upstairs_hallway
     - climate.downstairs
+    - climate.upstairs
 
  living_room:
   view: yes
