@@ -21,17 +21,12 @@
   entities: 
    - switch.lamp
 
- master_room:
+ bedrooms:
   view: yes
-  name: Master Bedroom
+  name: Bedrooms
   icon: mdi:hotel
   entities: 
    - light.master_bedroom
-
- chloes_bedroom:
-  view: yes
-  name: Chloe's Bedroom
-  entities:
    - light.chloes_room
 
  status_view:
