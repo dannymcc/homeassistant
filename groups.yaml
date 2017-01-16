@@ -40,7 +40,7 @@
   entities: 
    - light.chloes_room
    
-  master_bedroom:
+ master_bedroom:
   name: Master Bedroom
   entities: 
    - light.master_bedroom
