@@ -13,8 +13,12 @@
     - group.presence
     - light.downstairs_hallway
     - light.upstairs_hallway
+    - group.climate_control
+
+ climate_control:
+  name: Climate Control
+  entities:
     - climate.downstairs
-    - climate.upstairs
 
  living_room:
   view: yes
