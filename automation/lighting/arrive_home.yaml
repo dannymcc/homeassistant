@@ -1,0 +1,10 @@
+automation:
+ alias: "Turn on Hall Light When Arriving Home"
+ trigger:
+   - platform: state
+     entity_id: group.all_devices
+     from: 'not_home'
+     to: 'home'
+ action:
+   - service: scene.turn_on
+     entity_id: scene.arrive_home

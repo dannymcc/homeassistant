@@ -94,22 +94,27 @@ sensor 2:
 ##########################################
 ##Shell Commands                         #
 ##########################################
+
 shell_command: !include shell_commands.yaml
 
 ##########################################
 ##Inputs                                 #
 ##########################################
+
 input_select:  !include input_select.yaml
 input_slider:  !include input_slider.yaml
 input_boolean: !include input_boolean.yaml
+
 ##########################################
 ##Scripts                                #
 ##########################################
+
 script: !include scripts.yaml
 
 ###########################################  
 ##Groups                                  #
 ###########################################
+
 group: !include groups.yaml
 
 ###########################################
@@ -117,3 +122,9 @@ group: !include groups.yaml
 ###########################################
 
 automation: !include_dir_merge_list automation
+
+###########################################
+## Scenes                                 #
+###########################################
+
+scene@ !include_dir_merge_list scenes

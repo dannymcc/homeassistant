@@ -1,0 +1,7 @@
+- name: Arrive home
+  entities:
+    light.downstairs_hallway:
+      state: on
+      brightness: 120
+    switch.lamp:
+      state: on
