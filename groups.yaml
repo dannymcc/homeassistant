@@ -75,3 +75,7 @@
   - light.downstairs_hallway
   - light.hallways
   - switch.lamp
+
+ all switches and lights:
+  - group.all_lights
+  - group.all_switches
