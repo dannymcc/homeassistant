@@ -11,8 +11,7 @@
   entities:
     - group.television
     - group.presence
-    - light.downstairs_hallway
-    - light.upstairs_hallway
+    - light.hallways
     - group.climate_control
     - group.weather
     - group.automation_override
