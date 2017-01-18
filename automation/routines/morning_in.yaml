@@ -4,7 +4,7 @@
 - alias: "Weekday Sunrise Hall & Living Room"
   trigger:
     platform: time
-    after: '06:50'
+    after: '07:00'
   condition:
     condition: and
     conditions:
@@ -28,7 +28,7 @@
 - alias: "Weekday Sunrise Master Bedroom"
   trigger:
     platform: time
-    after: '06:50'
+    after: '08:00'
   condition:
     condition: and
     conditions:
