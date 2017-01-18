@@ -15,8 +15,6 @@
     - light.upstairs_hallway
     - group.climate_control
     - group.all_switches_and_lights
-    - group.all_switches
-    - group.all_lights
 
  climate_control:
   name: Climate Control
@@ -80,5 +78,7 @@
   - switch.lamp
 
  all_switches_and_lights:
-  - group.all_lights
-  - group.all_switches
+  name: Automation Override
+  entities:
+    - group.all_lights
+    - group.all_switches

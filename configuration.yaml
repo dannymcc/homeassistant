@@ -106,6 +106,17 @@ resources:
   - type: ipv6_address
     arg: eth1
 
+- platform: darksky
+  api_key: !secret darksky
+  monitored_conditions:
+    - icon
+    - summary
+    - precip_intensity
+    - precip_probability
+    - temperature
+    - temperature_max
+    - temperature_min
+  
 ##########################################
 ##Shell Commands                         #
 ##########################################
