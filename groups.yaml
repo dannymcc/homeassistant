@@ -90,3 +90,4 @@
    name: Automation Override
    entities: 
      - input_boolean.lights_morning_disable    
+     - group.all_automations
