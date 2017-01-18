@@ -127,4 +127,4 @@ automation: !include_dir_merge_list automation
 ## Scenes                                 #
 ###########################################
 
-scene@ !include_dir_merge_list scenes
+scene: !include_dir_merge_list scenes
