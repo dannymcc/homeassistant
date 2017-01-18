@@ -85,8 +85,8 @@
    - sensor.dark_sky_apparent_temperature
    - sensor.dark_sky_precip
    - sensor.dark_sky_precip_probability
-
+   
  automation_override:
    name: Automation Override
-   entities:
-     - input_boolean.lights_morning_disable
+   entities: 
+     - input_boolean.lights_morning_disable    
