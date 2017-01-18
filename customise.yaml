@@ -22,4 +22,4 @@ group.presence:
   friendly_name: 'Family'
   
 group.all_lights: 
-   hidden: false
+  hidden: false
