@@ -23,3 +23,8 @@ group.presence:
   
 group.all_lights: 
   hidden: false
+  friendly_name: All Lights
+  
+group.all_switches: 
+  hidden: false
+  friendly_name: All Switches
