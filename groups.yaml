@@ -82,9 +82,6 @@
    - sun.sun
    - sensor.dark_sky_temperature
    - sensor.dark_sky_summary
-   - sensor.dark_sky_apparent_temperature
-   - sensor.dark_sky_precip
-   - sensor.dark_sky_precip_probability
    
  automation_override:
    name: Automation Override
