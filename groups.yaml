@@ -14,8 +14,8 @@
     - light.downstairs_hallway
     - light.upstairs_hallway
     - group.climate_control
-    - group.all_switches_and_lights
     - group.weather
+    - group.automation_override
 
  climate_control:
   name: Climate Control
@@ -86,5 +86,7 @@
    - sensor.dark_sky_precip
    - sensor.dark_sky_precip_probability
 
- Automation Override:
-   - input_boolean.lights_morning_disable
+ automation_override:
+   name: Automation Override
+   entities:
+     - input_boolean.lights_morning_disable
