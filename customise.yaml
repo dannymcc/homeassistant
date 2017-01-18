@@ -20,3 +20,6 @@ light.master_bedroom:
 
 group.presence:
   friendly_name: 'Family'
+  
+group.all_lights: 
+   hidden: false
