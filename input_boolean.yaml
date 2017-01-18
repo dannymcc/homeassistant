@@ -1,0 +1,4 @@
+lights_morning_disable:
+ name: Disable Lights On in the Morning
+ initial: off
+ icon: mdi:theme-light-dark

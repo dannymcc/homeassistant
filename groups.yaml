@@ -78,12 +78,6 @@
   - light.hallways
   - switch.lamp
 
- all_switches_and_lights:
-  name: Automation Override
-  entities:
-    - group.all_lights
-    - group.all_switches
-
  Weather:
    - sun.sun
    - sensor.dark_sky_temperature
@@ -91,3 +85,6 @@
    - sensor.dark_sky_apparent_temperature
    - sensor.dark_sky_precip
    - sensor.dark_sky_precip_probability
+
+ Automation Override:
+   - input_boolean.lights_morning_disable

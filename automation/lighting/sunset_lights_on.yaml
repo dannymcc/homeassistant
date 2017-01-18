@@ -14,9 +14,14 @@ automation:
     event: sunset
     offset: "-01:00:00"
   condition:
-    condition: state
-    entity_id: group.all_devices
-    state: 'home'
+    condition: and
+    conditions:
+     - condition: state
+       entity_id: group.all_devices
+       state: 'home'
+     - condition: state
+       entity_id: input_boolean.lights_morning_disable
+       state: 'off'
   action:
     service: homeassistant.turn_on
     entity_id: group.living_room
