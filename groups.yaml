@@ -85,6 +85,7 @@
    
  automation_override:
    name: Automation Override
+   control: hidden
    entities: 
      - input_boolean.lights_morning_disable    
      - group.all_lights
