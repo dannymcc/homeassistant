@@ -14,6 +14,7 @@
     - light.downstairs_hallway
     - light.upstairs_hallway
     - group.climate_control
+    - group.all_switches_and_lights
 
  climate_control:
   name: Climate Control
