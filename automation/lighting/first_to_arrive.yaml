@@ -1,0 +1,12 @@
+- alias: Action - Power on lamp and hallway lights
+ trigger:
+ platform: state
+ entity_id: group.all_devices
+ from: 'not_home'
+ to: 'home'
+ condition:
+ platform: sun
+ after: sunset
+ action:
+ service: homeassistant.turn_on
+ entity_id: group.security
