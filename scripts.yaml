@@ -11,6 +11,8 @@ fireplace:
   alias: Play fireplace video
   sequence: 
    - service: homeassistant.turn_on
+     entity_id: scene.arrive_home
+   - service: homeassistant.turn_on
      entity_id: media_player.front_room
    - service: media_player.play_media
      entity_id: media_player.front_room
