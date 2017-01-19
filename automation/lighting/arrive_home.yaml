@@ -1,9 +1,9 @@
 - alias: "Turn on Hall Light When Arriving Home"
- trigger:
-   - platform: state
+  trigger:
+  - platform: state
      entity_id: group.all_devices
      from: 'not_home'
      to: 'home'
- action:
+  action:
    - service: script.turn_on
      entity_id: script.fireplace
