@@ -19,6 +19,6 @@ fireplace:
      data:      
        media_content_id: http://hybrid.servemp3.com/storage/fireplace.mp4
        media_content_type: video/mp4
-   - delay: 00:01:00
+   - delay: 00:05:00
    - service: homeassistant.turn_off
      entity_id: light.downstairs_hallway
