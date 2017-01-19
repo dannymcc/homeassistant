@@ -1,6 +1,4 @@
-automation:
-  alias: 'Rainy Day'
-
+- alias: 'Rainy Day'
   trigger:
        - platform: state
          entity_id: sensor.precip_intensity
@@ -11,15 +9,12 @@ automation:
        - platform: time
          after: '14:00'
          before: '23:00'
-
   condition: use_trigger_values
-
   action:
     service: switch.turn_on
     entity_id: switch.lamp
 
-automation 2:
-  alias: 'Rain is over'
+- alias: 'Rain is over'
   trigger:
        - platform: state
          entity_id: sensor.precip_intensity
@@ -27,7 +22,6 @@ automation 2:
        - platform: sun
          event: 'sunset'
          offset: '-01:00:00'
-
   condition: use_trigger_values
   action:
     service: switch.turn_off
