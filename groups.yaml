@@ -14,6 +14,7 @@
     - light.hallways
     - group.climate_control
     - group.weather
+    - script.fireplace
 
  climate_control:
   name: Climate Control
