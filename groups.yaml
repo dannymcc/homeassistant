@@ -14,7 +14,6 @@
     - light.hallways
     - group.climate_control
     - group.weather
-    - script.fireplace
 
  climate_control:
   name: Climate Control
@@ -44,6 +43,7 @@
    - automation.weekday_sunrise_master_bedroom
    - group.all_lights
    - group.all_switches
+   - automation.turn_on_hall_light_when_arriving_home
 
  chloes_bedroom:
   name: Chloe's Bedroom
