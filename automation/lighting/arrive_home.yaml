@@ -1,5 +1,4 @@
-automation:
- alias: "Turn on Hall Light When Arriving Home"
+- alias: "Turn on Hall Light When Arriving Home"
  trigger:
    - platform: state
      entity_id: group.all_devices
