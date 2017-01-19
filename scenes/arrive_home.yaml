@@ -2,6 +2,6 @@
   entities:
     light.downstairs_hallway:
       state: on
-      brightness: 120
+      brightness: 180
     switch.lamp:
       state: on
