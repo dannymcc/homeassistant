@@ -44,6 +44,7 @@
    - group.all_lights
    - group.all_switches
    - automation.turn_on_hall_light_when_arriving_home
+   - script.fireplace
 
  chloes_bedroom:
   name: Chloe's Bedroom
