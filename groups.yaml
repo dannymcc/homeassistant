@@ -14,7 +14,6 @@
     - light.hallways
     - group.climate_control
     - group.weather
-    - group.automation_override
 
  climate_control:
   name: Climate Control
@@ -42,7 +41,9 @@
   entities:
    - automation.weekday_sunrise_hall__living_room
    - automation.weekday_sunrise_master_bedroom
-   
+   - group.all_lights
+   - group.all_switches
+
  chloes_bedroom:
   name: Chloe's Bedroom
   entities: 
@@ -88,11 +89,3 @@
    - sun.sun
    - sensor.dark_sky_temperature
    - sensor.dark_sky_summary
-   
- automation_override:
-   name: Automation Override
-   control: hidden
-   entities: 
-     - input_boolean.lights_morning_disable    
-     - group.all_lights
-     - group.all_switches
