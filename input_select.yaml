@@ -1,10 +1,11 @@
 channel:
   name: Channel
   options:
+    - "--Select--"
     - BBC One
     - BBC Two
     - ITV
     - Channel 4
     - Sky 1
-  initial: BBC One
+  initial: "--Select--"
   icon: mdi:television-guide
