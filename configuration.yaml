@@ -55,6 +55,9 @@ sensor:
 # Text to speech
 tts:
   platform: google
+  
+media_player:
+  platform: cast
 
 device_tracker:
   platform: unifi
