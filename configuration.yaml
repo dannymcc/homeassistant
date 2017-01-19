@@ -67,7 +67,7 @@ device_tracker:
   site_id: !secret unifi_site
   interval_seconds: 10
   consider_home: 180
-  track_new_devices: yes
+  track_new_devices: no
 
 
 sensor 2:
