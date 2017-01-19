@@ -35,7 +35,14 @@
   entities: 
    - group.master_bedroom
    - group.chloes_bedroom
-
+   
+ automation:
+  view: yes
+  icon: mdi:robot
+  entities:
+   - automation.weekday_sunrise_hall__living_room
+   - automation.weekday_sunrise_master_bedroom
+   
  chloes_bedroom:
   name: Chloe's Bedroom
   entities: 
