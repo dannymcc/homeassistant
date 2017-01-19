@@ -22,3 +22,8 @@ fireplace:
    - delay: 00:05:00
    - service: homeassistant.turn_off
      entity_id: light.downstairs_hallway
+   - delay: 00:15:00
+   - service: homeassistant.turn_off
+     entity_id: light.downstairs_hallway
+   - service: media_player.media_stop
+     entity_id: media_player.front_room
