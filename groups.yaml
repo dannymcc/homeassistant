@@ -26,6 +26,7 @@
   icon: mdi:sofa
   entities: 
    - switch.lamp
+   - switch.big_lamp
 
  bedrooms:
   view: yes
