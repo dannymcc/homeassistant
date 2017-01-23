@@ -5,3 +5,5 @@
       brightness: 180
     switch.lamp:
       state: on
+    switch.big_lamp:
+      state: on
