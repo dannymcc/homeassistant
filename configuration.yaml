@@ -21,6 +21,10 @@ http:
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
   
+light:
+  platform: hue
+  host: 10.4.1.49
+  
 netatmo:
   api_key: !secret netatmo_apikey
   secret_key: !secret netatmo_secretkey
