@@ -25,8 +25,8 @@
   name: Living Room
   icon: mdi:sofa
   entities: 
-   - switch.lamp
-   - switch.big_lamp
+   - light.lamp
+   - light.big_lamp
 
  bedrooms:
   view: yes
