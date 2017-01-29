@@ -3,7 +3,7 @@
     light.downstairs_hallway:
       state: on
       brightness: 180
-    switch.lamp:
+    light.lamp:
       state: on
-    switch.big_lamp:
+    light.big_lamp:
       state: on
