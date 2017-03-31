@@ -69,8 +69,8 @@ device_tracker:
   username: !secret unifi_user
   password: !secret unifi_pass
   site_id: !secret unifi_site
-  interval_seconds: 10
-  consider_home: 180
+  interval_seconds: 5
+  consider_home: 30
   track_new_devices: no
 
 
