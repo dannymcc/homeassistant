@@ -60,7 +60,7 @@
  presence:
   name: Presence
   entities:
-    - device_tracker.dans_oneplus_three
+    - device_tracker.dans_iphone
     - device_tracker.kates_iphone
 
  sensor_pi:
