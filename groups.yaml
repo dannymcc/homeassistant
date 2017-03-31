@@ -19,6 +19,7 @@
   name: Climate Control
   entities:
     - climate.downstairs
+    - climate.upstairs
 
  living_room:
   view: yes
