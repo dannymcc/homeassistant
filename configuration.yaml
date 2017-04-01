@@ -72,7 +72,7 @@ device_tracker:
   interval_seconds: 10
   consider_home: 90
   track_new_devices: no
-
+  verify_ssl: false
 
 sensor 2:
   platform: darksky
