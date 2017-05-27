@@ -75,7 +75,7 @@ device_tracker:
   password: !secret unifi_pass
   site_id: !secret unifi_site
   interval_seconds: 10
-  consider_home: 90
+  consider_home: 600
   track_new_devices: no
   verify_ssl: false
 
