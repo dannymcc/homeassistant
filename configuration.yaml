@@ -19,7 +19,7 @@ http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
-  base_url: !secret base_url
+  #base_url: !secret base_url
   
 media_player:
   - platform: spotify
