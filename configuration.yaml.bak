@@ -12,7 +12,6 @@ homeassistant:
   time_zone: Europe/London
   # Customisations File
   customize: !include customise.yaml
-config:
 # Enables the frontend
 frontend:
 
@@ -20,12 +19,12 @@ http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
-  base_url: !secret baseurl
-
+  base_url: !secret base_url
+  
 media_player:
 - platform: spotify
   client_id: !secret spotify_client_id
-  client_secret: !secret spotify_client_secret
+  client_secret: !secret spotify_client_secret 
   
 light:
   platform: hue

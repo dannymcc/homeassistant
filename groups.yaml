@@ -63,6 +63,7 @@
   entities:
     - device_tracker.dans_iphone
     - device_tracker.chloesiphone
+    - pi_dmcc_iphone
 
  sensor_pi:
   name: Raspberry Pi
