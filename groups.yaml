@@ -62,6 +62,7 @@
   name: Presence
   entities:
     - device_tracker.dans_iphone
+    - device_tracker.chloesiphone
 
  sensor_pi:
   name: Raspberry Pi
