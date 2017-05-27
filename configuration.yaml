@@ -65,11 +65,8 @@ sensor:
 tts:
   platform: google
   
-media_player:
-  platform: cast
-
 device_tracker:
-  platform: unifi
+- platform: unifi
   host: !secret unifi_host
   username: !secret unifi_user
   password: !secret unifi_pass
@@ -78,6 +75,16 @@ device_tracker:
   consider_home: 600
   track_new_devices: no
   verify_ssl: false
+- platform: owntracks
+  max_gps_accuracy: 300
+  waypoints: True
+
+mqtt:
+  broker: !secret mqttbroker
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret mqttuser
+  password: !secret mqttpass
 
 sensor 2:
   platform: darksky
