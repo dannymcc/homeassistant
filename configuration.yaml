@@ -12,7 +12,6 @@ homeassistant:
   time_zone: Europe/London
   # Customisations File
   customize: !include customise.yaml
-config:
 # Enables the frontend
 frontend:
 
@@ -87,30 +86,6 @@ mqtt:
   username: !secret mqttuser
   password: !secret mqttpass
 
-sensor 2:
-  platform: darksky
-  api_key: !secret darksky
-  monitored_conditions:
-    - summary
-    - minutely_summary
-    - hourly_summary
-    - daily_summary
-    - nearest_storm_distance
-    - nearest_storm_bearing
-    - precip_type
-    - precip_intensity
-    - precip_probability
-    - temperature
-    - apparent_temperature
-    - dew_point
-    - wind_speed
-    - wind_bearing
-    - cloud_cover
-    - humidity
-    - pressure
-    - visibility
-    - ozone
-  
 ##########################################
 ##Shell Commands                         #
 ##########################################

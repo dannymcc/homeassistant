@@ -61,7 +61,6 @@
  presence:
   name: Presence
   entities:
-    - device_tracker.dans_iphone
     - device_tracker.chloesiphone
     - pi_dmcc_iphone
 
@@ -80,17 +79,7 @@
     - sensor.received_eth1
     - sensor.sent_eth1
 
- television:
-  - input_select.channel
-  - script.playpause
-  - script.record
-
  security:
   - light.downstairs_hallway
   - light.hallways
   - switch.lamp
-
- Weather:
-   - sun.sun
-   - sensor.dark_sky_temperature
-   - sensor.dark_sky_summary
